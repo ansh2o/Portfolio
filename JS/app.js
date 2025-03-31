@@ -114,30 +114,30 @@ window.addEventListener('scroll', () => {
 });
 
 // Contact Form Validation
-const contactForm = document.querySelector('#contactForm');
+// const contactForm = document.querySelector('#contactForm');
 
-if (contactForm) {
-  contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const name = document.querySelector('#name').value.trim();
-    const email = document.querySelector('#email').value.trim();
-    const message = document.querySelector('#message').value.trim();
+// if (contactForm) {
+//   contactForm.addEventListener('submit', (e) => {
+//     e.preventDefault();
+//     const name = document.querySelector('#name').value.trim();
+//     const email = document.querySelector('#email').value.trim();
+//     const message = document.querySelector('#message').value.trim();
 
-    if (!name || !email || !message) {
-      alert('Please fill out all fields.');
-    } else if (!validateEmail(email)) {
-      alert('Please enter a valid email address.');
-    } else {
-      alert('Thank you for reaching out!');
-      contactForm.reset();
-    }
-  });
-}
+//     if (!name || !email || !message) {
+//       alert('Please fill out all fields.');
+//     } else if (!validateEmail(email)) {
+//       alert('Please enter a valid email address.');
+//     } else {
+//       alert('Thank you for reaching out!');
+//       contactForm.reset();
+//     }
+//   });
+// }
 
-function validateEmail(email) {
-  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  return re.test(String(email).toLowerCase());
-}
+// function validateEmail(email) {
+//   const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+//   return re.test(String(email).toLowerCase());
+// }
 
 // Lazy Loading Images
 const lazyImages = document.querySelectorAll('img[data-src]');
